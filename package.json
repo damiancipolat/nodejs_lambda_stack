@@ -43,8 +43,5 @@
       "!**/__test__/**",
       "!**/coverage/**"
     ]
-  },
-  "hooks": {
-    "pre-commit": "node /hooks/hook.js"
-  }  
+  }
 }
