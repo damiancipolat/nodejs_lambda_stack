@@ -1,0 +1,18 @@
+service: lambda-stack
+app: damian-stack
+org: damiancipolat
+region: usa-east-1
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  timeout: 30
+  memorySize: 254
+
+functions:
+  alpha:
+    handler: src/functions/alphaLambda.handler
+    name: ${self:provider.stage}-alpha-lambda
+  beta:
+    handler: src/functions/betaLambda.handler
+    name: ${self:provider.stage}-beta-lambda    

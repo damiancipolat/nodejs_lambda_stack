@@ -2,7 +2,7 @@ const {
     alphaService
 } = require('../service/alphaService');
 
-const alphaLambda = () => {
+const alphaLambda = async () => {
 
     return alphaService(1,2);
 

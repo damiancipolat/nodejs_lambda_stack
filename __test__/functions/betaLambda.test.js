@@ -4,7 +4,7 @@ describe('Beta lambda test', () => {
       jest.resetModules();
     });
 
-    it('Lambda beta - test',() => {
+    it('Lambda beta - test', async () => {
 
 
         const service = require('../../src/service/betaService.js');
@@ -12,7 +12,7 @@ describe('Beta lambda test', () => {
 
         const beta = require('../../src/functions/betaLambda.js');        
     
-        beta.handler();
+        await beta.handler();
         
         expect(betaSpy).toBeCalled();
         

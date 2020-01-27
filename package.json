@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "check": "eslint --ignore-path .gitignore ."
+    "check": "eslint --ignore-path .gitignore .",
+    "sls-deploy": "serverless deploy -v"
   },
   "repository": {
     "type": "git",

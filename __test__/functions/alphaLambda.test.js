@@ -4,7 +4,7 @@ describe('Alpha lambda test', () => {
       jest.resetModules();
     });
 
-    it('Lambda alpha - test',() => {
+    it('Lambda alpha - test',async () => {
 
 
         const service = require('../../src/service/alphaService.js');
@@ -12,7 +12,7 @@ describe('Alpha lambda test', () => {
 
         const alpha = require('../../src/functions/alphaLambda.js');        
     
-        alpha.handler();
+        await alpha.handler();
         
         expect(alphaSpy).toBeCalled();
         
