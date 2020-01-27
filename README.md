@@ -9,6 +9,7 @@ This modules are used in this project.
 
 - Deploy: Serverless framework.
 - Test: Jest
+- Git hook: husky
 - Lint: es-lin / airbnb
 - Config: https://www.npmjs.com/package/config
 
@@ -59,8 +60,17 @@ npm run deploy
 ```
 
 ### Versions:
-The project use SEMVER to track the changes in the package.json in the `version` key, there are a githook to avoid commit repeated
-coded versions.
+The project use SEMVER to track the changes in the package.json in the `version` key, there are a githook in the **precommmit** created using Husky that run a validation, to make sure always commit a differente package.json{version} differente. To make this is necessary
+to modify in the `./hooks/config.json` the github api token and the development branch name.
+
+```sh
+module.exports = {
+    token: process.env.GIT_TOKEN || 'xxxxxxxxxxxx',
+    branch: process.env.GIT_BRANCH || 'development',
+};
+```
+
+How to get the Github api token, go to this link: https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line#creating-a-token
 
 ### To use as template:
 ```sh
