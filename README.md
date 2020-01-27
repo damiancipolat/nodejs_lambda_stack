@@ -61,16 +61,17 @@ npm run deploy
 
 ### Versions:
 The project use SEMVER to track the changes in the package.json in the `version` key, there are a githook in the **precommmit** created using Husky that run a validation, to make sure always commit a differente package.json{version} differente. To make this is necessary
-to modify in the `./hooks/config.json` the github api token and the development branch name.
+to modify in the `./hooks/config.js` the github api token and the development branch name.
 
-Make sure you have the github project url in the package.json{repository.url}, example: https://github.com/damiancipolat/nodejs_lambda_stack
-
+**Condig.js**:
 ```sh
 module.exports = {
-    token: process.env.GIT_TOKEN || 'xxxxxxxxxxxx',
-    branch: process.env.GIT_BRANCH || 'development',
+    token: process.env.GIT_TOKEN || 'xxxxxxxxxxxx',  <-- GITHUB API TOKEN HERE
+    branch: process.env.GIT_BRANCH || 'development', <-- DEVELOPMENT BRANCH NAME HERE.
 };
 ```
+
+*Make sure you have the github project url in the package.json{repository.url}, example: https://github.com/damiancipolat/nodejs_lambda_stack.*
 
 How to get the Github api token, go to this link: https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line#creating-a-token
 
