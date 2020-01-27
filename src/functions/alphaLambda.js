@@ -1,8 +1,10 @@
-const alpha = require('../service/alphaService');
+const {
+    alphaService
+} = require('../service/alphaService');
 
 const alphaLambda = () => {
 
-    return alpha(1,2);
+    return alphaService(1,2);
 
 };
 

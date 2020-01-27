@@ -1,8 +1,10 @@
-const beta = require('../service/betaService');
+const {
+    betaService
+} = require('../service/betaService');
 
 const betaLambda = () => {
 
-    return beta(1,2);
+    return betaService(1,2);
 
 };
 
