@@ -1,4 +1,4 @@
-<img src="https://github.com/damiancipolat/Functional_programming_in_JS/blob/master/doc/fp.png?raw=true" width="125px" align="right" />
+<img src="https://github.com/damiancipolat/nodejs_lambda_stack/blob/master/doc/logo.png?raw=true" width="125px" align="right" />
 
 # Functional programming in Javascript
 I have been a javascript programmer for a long time and I have seen this language grow, from a simple tool to validate forms with jquery, to be able to create large backend platforms. Since ES6 appeared and the ability to add "classes" I see that it has only caused a confusion in the way of programming, making a javascript code as a migration from java. 
