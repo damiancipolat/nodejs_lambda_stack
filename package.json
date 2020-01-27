@@ -1,6 +1,6 @@
 {
   "name": "nodejs_lambda_stack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Base project for use lambda functions with nodejs",
   "main": "index.js",
   "scripts": {

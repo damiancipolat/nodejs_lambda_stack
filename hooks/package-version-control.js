@@ -28,7 +28,9 @@ const getPackageFromRepo = async (url) => {
 //Match if the file version is the correct.
 const matchFiles = async () => {
 
-  console.log('Running Node.js package.json - version control');
+  console.log('');
+  console.log('> Running Node.js package.json - version control');
+  console.log('');
 
   //Get from current package.json
   const {
@@ -46,15 +48,18 @@ const matchFiles = async () => {
   //Get the file.
   const gitFile = await getPackageFromRepo(apiFile, token);
 
+  console.log(`> Version control - file: [${version}] - repository [${gitFile.version}] - OK?  ${version !== gitFile.version}`)
+  console.log('');
+
   if (version !== gitFile.version) {
 
-    console.error('Package.json version mismatch', version,gitFile.version,' please update the file version and commit again!!');
-    process.exit(1);
+    console.log('> Version control succesfull :)!');    
+    process.exit(0);
 
   } else {
 
-    console.log('Version control succesfull :)!');
-    process.exit(0);
+    console.error('> Package.json version mismatch! Please update the file version and commit again!!');
+    process.exit(1);
 
   }    
 
