@@ -63,7 +63,7 @@ npm run deploy
 The project use SEMVER to track the changes in the package.json in the `version` key, there are a githook in the **precommmit** created using Husky that run a validation, to make sure always commit a differente package.json{version} differente. To make this is necessary
 to modify in the `./hooks/config.js` the github api token and the development branch name.
 
-**Condig.js**:
+**Config.js**:
 ```sh
 module.exports = {
     token: process.env.GIT_TOKEN || 'xxxxxxxxxxxx',  <-- GITHUB API TOKEN HERE
