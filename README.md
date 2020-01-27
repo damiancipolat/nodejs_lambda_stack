@@ -18,12 +18,26 @@ The project is ready to work with 3 environments (dev / stage / production).
 
 **Configuration**:
 
-In the **/config** folder there are five files with a configuration schema to be used in the project: `dev.json`, `stage.json`, `production.json`, `default.json` and custom-environment-variables.json.
+In the **/config** directory there are five files with a configuration schema to be used in the project: `dev.json`, `stage.json`, `production.json`, `default.json` and `custom-environment-variables.json`.
 
 - default.json: Use this file when NODE_ENV = "".
 - dev.json: Use this file when NODE_ENV = dev.
 - stage.json: Use this file when NODE_ENV = stage.
 - production.json: Use this file when NODE_ENV = production.
+- **custom-environment-variables.json**: this is a special file, is used to mix the configuration schema with ENVIRONMENT VARIABLES,
+map the variables name with environment variables, example:
+
+```json
+{
+    "system-env":{
+        "loan":"LOAN_NAME",
+        "table":"TABLE_NAME"
+    },
+    "values":{}
+}
+```
+
+In the example "values" is empty, and the interesting structured to map is "system-env" in this object the script will map the values "LOAN_NAME" and "TABLE_NAME" with environment variables, and finally can be accesed using the `config.get('system-env.loan');`.
 
 
 ### Install:
