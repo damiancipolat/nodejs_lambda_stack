@@ -11,6 +11,22 @@ This modules are used in this project.
 - Lint: es-lin / airbnb
 - Config: https://www.npmjs.com/package/config
 
+**Environments**:
+The project is ready to work with 3 environments (dev / stage / production).
+
+#### Configuration - environments.
+In the **/config** folder there are five files with a configuration schema to be used in the project: `dev.json`, `stage.json`, `production.json`, `default.json` and custom-environment-variables.json.
+
+- default.json: Use this file when NODE_ENV = "".
+- dev.json: Use this file when NODE_ENV = dev.
+- stage.json: Use this file when NODE_ENV = stage.
+- production.json: Use this file when NODE_ENV = production.
+
+
+### Install:
+```sh
+```
+
 ### Command List:
 ```sh
 #To check es-lint rules:
@@ -21,6 +37,10 @@ npm test
 
 #To run deploy:
 npm run deploy
+```
+
+### To use as template:
+```sh
 ```
 
 ### What is functional programming (FP)?:
