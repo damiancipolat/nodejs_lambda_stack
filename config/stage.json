@@ -1,0 +1,10 @@
+{
+    "system-env":{},
+    "values":{
+        "loans":1000,
+        "dollars":93000,
+        "yen":1200,
+        "ars":5600,
+        "ur":5000
+    }
+}

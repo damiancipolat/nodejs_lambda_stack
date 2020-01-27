@@ -1,0 +1,7 @@
+{
+    "system-env":{
+        "loan":"LOAN_NAME",
+        "table":"TABLE_NAME"
+    },
+    "values":{}
+}

@@ -6,6 +6,8 @@
         "ecmaVersion": 2018
     },
     "rules": {
+        "import/newline-after-import":"off",
+        "import/order":"off",
         "spaced-comment":"off",
         "global-require":"off",
         "arrow-body-style":"off",
