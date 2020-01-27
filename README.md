@@ -13,6 +13,9 @@ This modules are used in this project.
 
 **Command List**:
 ```sh
+#To check es-lint rules:
+npm run check
+
 #To run unit test and coverage:
 npm test
 
