@@ -6,11 +6,11 @@
   "scripts": {
     "test": "jest",
     "check": "eslint --ignore-path .gitignore .",
-    "sls-deploy": "serverless deploy -v"
+    "deploy": "npm test && serverless deploy -v"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/damiancipolat/nodejs_lambda_stack.git"
+    "url": "https://github.com/damiancipolat/nodejs_lambda_stack"
   },
   "author": "Damian Cipolat",
   "license": "MIT",
@@ -24,6 +24,7 @@
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.0",
+    "husky": "^4.2.1",
     "jest": "^25.1.0"
   },
   "jest": {
@@ -39,8 +40,11 @@
     "collectCoverageFrom": [
       "**/*.js",
       "!**/node_modules/**",
-      "!**/test/**",
+      "!**/__test__/**",
       "!**/coverage/**"
     ]
-  }
+  },
+  "hooks": {
+    "pre-commit": "node /hooks/hook.js"
+  }  
 }
