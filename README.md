@@ -58,6 +58,10 @@ npm test
 npm run deploy
 ```
 
+### Versions:
+The project use SEMVER to track the changes in the package.json in the `version` key, there are a githook to avoid commit repeated
+coded versions.
+
 ### To use as template:
 ```sh
 ```
