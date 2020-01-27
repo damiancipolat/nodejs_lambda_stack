@@ -72,8 +72,9 @@ module.exports = {
 
 How to get the Github api token, go to this link: https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line#creating-a-token
 
-### To use as template:
+### To use this project as template:
 ```sh
+serverless create --template-url https://github.com/damiancipolat/nodejs_lambda_stack --path [YOUR-PROJECT-PATH]
 ```
 
 # Project title:
