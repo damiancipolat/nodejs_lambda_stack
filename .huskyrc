@@ -1,5 +1,5 @@
 {
   "hooks": {
-    "pre-commit": "node /hooks/hook.js"
+    "pre-commit": "node ./hooks/package-version-control.js"
   }  
 }
