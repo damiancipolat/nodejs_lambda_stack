@@ -4,34 +4,21 @@
 This repository was created to be used as a template for future projects.
 
 ### Scaffolding:
-This is the folder structure.
+This modules are used in this project.
 
+- Deploy: Serverless framework.
+- Test: Jest
+- Lint: es-lin / airbnb
+- Config: https://www.npmjs.com/package/config
+
+**Command List**:
 ```sh
-|-- /
-    |-- README.md
-    |-- serverless.yml
-    |-- .eslintrc.json
-    |-- .gitignore
-    |-- package.json
-    |-- package-lock.json
-    |-- /src
-    |-- /config
-        |-- default.json
-    |-- /src
-        |-- 
+#To run unit test and coverage:
+npm test
 
-
-/
-│   README.md
-│   file001.txt    
-│
-└───__test__
-│   │   file011.txt
-│   │   file012.txt
-│   │
+#To run deploy:
+npm run deploy
 ```
-
-Command List:
 
 ### What is functional programming (FP)?:
 
