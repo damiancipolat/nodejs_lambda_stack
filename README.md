@@ -11,7 +11,7 @@ This modules are used in this project.
 - Lint: es-lin / airbnb
 - Config: https://www.npmjs.com/package/config
 
-**Command List**:
+### Command List:
 ```sh
 #To check es-lint rules:
 npm run check
