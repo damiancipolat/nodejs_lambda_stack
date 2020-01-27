@@ -37,11 +37,13 @@ map the variables name with environment variables with the same name, example:
 }
 ```
 
-In the example "values" is empty, and the interesting structured to map is "system-env" in this object the script will map the values "LOAN_NAME" and "TABLE_NAME" with environment variables, and finally can be accesed using the `config.get('system-env.loan');`.
+In the example "values" is empty, and the interesting structured to map is "system-env" in this object the script will map the values "LOAN_NAME" and "TABLE_NAME" with environment variables, and finally can be accesed using the `config.get('system-env.loan');`. Take a look later to the file `serverless.yml` in the "environment" section.
 
 
 ### Install:
 ```sh
+npm install serverless -g
+npm install
 ```
 
 ### Command List:
@@ -60,6 +62,6 @@ npm run deploy
 ```sh
 ```
 
-### What is functional programming (FP)?:
+# Project title:
 
-In computer science, functional programming is a programming paradigm—a style of building the structure and elements of computer programs—that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. It is a declarative programming paradigm in that programming is done with expressions or declarations instead of statements. In functional code, the output value of a function depends only on its arguments, so calling a function with the same value for an argument always produces the same result. This is in contrast to imperative programming where, in addition to a function's arguments, global program state can affect a function's resulting value. Eliminating side effects, that is, changes in state that do not depend on the function inputs, can make understanding a program easier, which is one of the key motivations for the development of functional programming.
+Delete the last sections of the README.md to add in this section the new project information.
