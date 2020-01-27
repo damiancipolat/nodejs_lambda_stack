@@ -16,7 +16,7 @@ This modules are used in this project.
 
 The project is ready to work with 3 environments (dev / stage / production).
 
-#### Configuration - environments.
+##### Configuration - environments.
 
 In the **/config** folder there are five files with a configuration schema to be used in the project: `dev.json`, `stage.json`, `production.json`, `default.json` and custom-environment-variables.json.
 
