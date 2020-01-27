@@ -1,0 +1,44 @@
+{
+  "name": "nodejs_lambda_stack",
+  "version": "1.0.0",
+  "description": "Base project for use lambda functions with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "eslint --ignore-path .gitignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damiancipolat/nodejs_lambda_stack.git"
+  },
+  "author": "Damian Cipolat",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.610.0",
+    "serverless": "^1.61.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "jest": "^25.1.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "covergaeThreshold": {
+      "global": {
+        "branches": 2,
+        "functions": 2,
+        "lines": 50,
+        "statements": 2
+      }
+    },
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/node_modules/**",
+      "!**/__tests__/**",
+      "!**/coverage/**"
+    ]
+  }
+}
