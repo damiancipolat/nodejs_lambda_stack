@@ -25,7 +25,7 @@ In the **/config** directory there are five files with a configuration schema to
 - stage.json: Use this file when NODE_ENV = stage.
 - production.json: Use this file when NODE_ENV = production.
 - **custom-environment-variables.json**: this is a special file, is used to mix the configuration schema with ENVIRONMENT VARIABLES,
-map the variables name with environment variables, example:
+map the variables name with environment variables with the same name, example:
 
 ```json
 {
